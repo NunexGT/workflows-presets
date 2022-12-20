@@ -1,8 +1,8 @@
 Import-Module C:\Windows\System32\UIAutomation-Powershell-Net40\UIAutomation.dll
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName UIAutomationClient
-Add-Type -MemberDefinition $sig -name NativeMethods -namespace Win32
 $sig = '[DllImport("user32.dll")] public static extern bool ShowWindowAsync(IntPtr hWnd, int nCmdShow);'
+Add-Type -MemberDefinition $sig -name NativeMethods -namespace Win32
 $process_name = "opera"
 $costum_wait_secs = 6
 #this script assumes all monitors are 1080p (because i dont have 4k monitors)
