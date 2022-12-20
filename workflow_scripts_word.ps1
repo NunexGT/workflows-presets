@@ -1,4 +1,4 @@
-Import-Module C:\Windows\System32\UIAutomation-Powershell-Net40\UIAutomation.dll
+Import-Module C:\Windows\System32\UIAutomation.dll
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName UIAutomationClient
 Add-Type -MemberDefinition $sig -name NativeMethods -namespace Win32
